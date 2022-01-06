@@ -1,0 +1,16 @@
+---
+framework: jasmine
+postMerge:
+  pattern:
+    - "./test/weex/**/*.spec.js"
+preMerge:
+  pattern:
+    - "./test/weex/**/*.spec.js"
+preRun:
+     command:
+        - yarn install
+postRun:
+     command:
+        - node --version
+configFile: "./test/weex/jasmine.js"
+version: 1.0
